@@ -27,7 +27,7 @@ var firstPageImg = document.getElementsByClassName('first-page-img');
 var navA = document.getElementsByClassName('nav-li-a');
 
 // navBarA.forEach(elem => elem.addEventListener('click', smoothScroll));
-
+/*
 function smoothScroll(event){
     event.preventDefault();
     const targetId = event.currentTarget.getAttribute("href");
@@ -36,16 +36,16 @@ function smoothScroll(event){
         behavior: 'smooth'
     });
 }
-/*
-function test(){
-    
-    var targetHref = navBarA[2].getAttribute('href');
+
+function test(event){ 
+    event.preventDefault();
     window.scrollTo({
-        top: targetHref==="#" ? 0 : document.querySelector(targetHref).offsetTop,
+        top: 1823,
         behavior: 'smooth'
     });
+
+    console.log(document.querySelector('#projects-page'));
 }
-*/
 
 navA[0].addEventListener('click', smoothScroll);
 navA[1].addEventListener('click', smoothScroll);
@@ -54,7 +54,7 @@ navA[3].addEventListener('click', smoothScroll);
 navA[4].addEventListener('click', smoothScroll);
 navA[5].addEventListener('click', smoothScroll);
 navA[6].addEventListener('click', smoothScroll);
-
+*/
 /*
 for(var q = 0; q < navA.length; q++){
     navA[q].addEventListener('click', smoothScroll)
@@ -188,7 +188,6 @@ function navScroll(){
 
 
     window.addEventListener('scroll', ()=>{
-     console.log(scrollY);
 
       navScroll();
 
@@ -508,5 +507,3 @@ function changeColor(elem){
     navA[elem].style.color = "white";
     
 }
-
-
