@@ -28,7 +28,7 @@ var navA = document.getElementsByClassName('nav-li-a');
 var blogView = document.getElementsByClassName('blog-full-view');
 var blogBtn = document.getElementsByClassName('blog-btn');
 var blogCloseBtn = document.getElementById('blog-close-btn');
-
+var loader = document.getElementsByClassName('loader-screen');
 
 // navBarA.forEach(elem => elem.addEventListener('click', smoothScroll));
 /*
@@ -51,6 +51,17 @@ navA[5].addEventListener('click', smoothScroll);
 navA[6].addEventListener('click', smoothScroll);
 }
 */
+
+function loader(){
+    document.body.addEventListener('load', ()=>{
+        loader[0].style.opacity = '0';
+        loader[0].style.transitionDelay = '1s';
+        loader[0].style.display = 'none';
+    });
+
+
+    
+}
 
 
 function blogV(){
@@ -212,7 +223,7 @@ function navScroll(){
             navBarMobile.style.color = "white";
         }
 
-        if(window.scrollY > 50){
+        if(window.scrollY > 800){
             for(var i = 0; i < percentBar.length; i++){
                 experienceMeter[i].style.width = percentBar[i].getAttribute('data-target');
                 experienceMeter[i].style.transition = "3s";
@@ -221,7 +232,7 @@ function navScroll(){
         }
 
 
-        if(window.scrollY > 700){
+        if(window.scrollY > 1400){
             /*
             projectOne.style.left = "0";
             projectOne.style.transition = '2s';
@@ -382,6 +393,14 @@ function navScroll(){
         setTimeout(()=>{setInterval('fadeImg()', 6000);}, 1000);
        // smoothScro();
        blogV();
+
+        setTimeout(()=>{
+        loader[0].style.WebkitTransitionDelay = '3s';
+        loader[0].style.transitionDelay = '3s';
+        loader[0].style.transition = '1s';
+        loader[0].style.opacity = '0';
+        }, 2000);
+        setTimeout(()=>{loader[0].style.display = 'none';}, 3000);
        }
        
 
