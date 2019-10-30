@@ -25,9 +25,14 @@ var imgsCont = document.getElementsByClassName('imgs-cont');
 var firstPage = document.getElementsByClassName('first-page');
 var firstPageImg = document.getElementsByClassName('first-page-img');
 var navA = document.getElementsByClassName('nav-li-a');
+var blogView = document.getElementsByClassName('blog-full-view');
+var blogBtn = document.getElementsByClassName('blog-btn');
+
+
 
 // navBarA.forEach(elem => elem.addEventListener('click', smoothScroll));
 /*
+function smoothScro(){
 function smoothScroll(event){
     event.preventDefault();
     const targetId = event.currentTarget.getAttribute("href");
@@ -37,16 +42,6 @@ function smoothScroll(event){
     });
 }
 
-function test(event){ 
-    event.preventDefault();
-    window.scrollTo({
-        top: 1823,
-        behavior: 'smooth'
-    });
-
-    console.log(document.querySelector('#projects-page'));
-}
-
 navA[0].addEventListener('click', smoothScroll);
 navA[1].addEventListener('click', smoothScroll);
 navA[2].addEventListener('click', smoothScroll);
@@ -54,23 +49,26 @@ navA[3].addEventListener('click', smoothScroll);
 navA[4].addEventListener('click', smoothScroll);
 navA[5].addEventListener('click', smoothScroll);
 navA[6].addEventListener('click', smoothScroll);
-*/
-/*
-for(var q = 0; q < navA.length; q++){
-    navA[q].addEventListener('click', smoothScroll)
-};
-
-function smoothScroll(event){
-    event.preventDefault();
-
-    const targetId = event.currentTarget(targetId).getAttribute("href");
-
-    window.scrollTo({
-        top: document.querySelector(targetId).offsetTop,
-        behavior: 'smooth',
-    });
 }
 */
+
+
+function blogV(){
+event.preventDefault();
+
+for(var q = 0; q < blogBtn.length; q++){
+    blogBtn[q].addEventListener('click', ()=>{
+        blogView[0].style.display = 'block';
+    });
+};
+
+blogView[0].addEventListener('click', ()=>{
+blogView[0].style.display = 'none';
+
+});
+
+}
+
 
 barsBtn.addEventListener('click', ()=>{
 
@@ -377,7 +375,15 @@ function navScroll(){
        }
 
 
-       window.onload = timer = setInterval('reviewsSlide()', 3000);
+       window.onload = () => {
+
+        timer = setInterval('reviewsSlide()', 3000);
+        timerTwo = setInterval('blogSlider()', 2000);
+        setTimeout(()=>{setInterval('fadeImg()', 6000);}, 1000);
+       // smoothScro();
+       blogV();
+       }
+       
 
        reviewsMainCount[0].addEventListener('mouseenter', ()=>{
        clearInterval(timer);
@@ -418,7 +424,7 @@ else if(left === -99.99 || countTwo !== 0){
 } 
 }
 
-        window.onload = timerTwo = setInterval('blogSlider()', 2000);
+        
 
 
 imgsCont[0].addEventListener('mouseenter', ()=>{
@@ -477,10 +483,6 @@ function fadeImg(){
         z = 1;
     }
 }
-
- window.onload = setTimeout(()=>{
-    setInterval('fadeImg()', 6000);
- }, 1000);
 
 /*
 firstPage.addEventListener('mouseenter', ()=>{
