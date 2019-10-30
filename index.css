@@ -1053,7 +1053,17 @@ margin-top: 20px;
    top: 0;
    z-index: 200;
    overflow-y: auto;
-  /* not fixed yet */
+     /* not fixed yet */
+ }
+
+ #blog-close-btn{
+  position: absolute;
+   color: cyan;
+   z-index: 400;
+   font-size: x-large;
+   right: 2%;
+   top: 2%;
+   cursor: pointer;
  }
 
  .main{
@@ -1121,6 +1131,7 @@ margin-top: 20px;
   left: 15%;
   transform: translateX(-15%);
 }
+/*
 .blog-full-view-left-wall{
   position: absolute;
   width: 5px;
@@ -1137,7 +1148,7 @@ margin-top: 20px;
   right: 0;
   top: 0;
 }
-
+*/
 .main .paragraph{
   position: relative;
   color: silver;
@@ -1188,6 +1199,8 @@ margin-top: 20px;
   width: 100%;
   top: 5%;
   transform: translateY(-5%);
+  margin-bottom: 40px;
+  font-family: 'Saira', sans-serif;
 }
 
 .commenter-info-cont{
@@ -1304,6 +1317,64 @@ margin-top: 20px;
   width: 90%;
   color: grey;
   margin-left: 30px;
+}
+
+.comments-form-cont{
+  position: relative;
+  width: 80%;
+  height: 50vh; /* Will change to auto later */
+  left: 50%;
+  transform: translateX(-50%);
+  border-top: 2px solid #666;
+  margin-top: 40px;
+}
+
+.comments-form-cont h1{
+  position: relative;
+  top: 5%;
+  transform: translateY(-5%);
+  color: darkcyan;
+  font-family: 'Saira', sans-serif;
+}
+
+.comments-form-cont form{
+  position: relative;
+  width: 400px;
+  height: auto;
+
+  margin-left: 20px;
+  margin-top: 40px;
+}
+
+.comments-form-cont input{
+  width: 100%;
+  height: 50px;
+  font-size: large;
+  font-family: 'Saira', sans-serif;
+  margin-top: 10px;
+  background: transparent;
+  border: none;
+  border-bottom: 4px solid darkcyan;
+  color: green; /* Doesn't Work! */
+}
+
+.comments-form-cont input:focus{
+  outline: none;
+  color: white; /* Doesn't Work! */
+}
+
+.comments-form-cont button{
+  position: relative;
+  width: 150px;
+  height: 40px;
+  font-size: medium;
+  font-family: 'Saira', sans-serif;
+  background: transparent;
+  border: none;
+  border: 2px solid darkcyan;
+  margin-top: 30px;
+  margin-left: 30px;
+  color: white;
 }
 
  .services-page-cont{

@@ -27,7 +27,7 @@ var firstPageImg = document.getElementsByClassName('first-page-img');
 var navA = document.getElementsByClassName('nav-li-a');
 var blogView = document.getElementsByClassName('blog-full-view');
 var blogBtn = document.getElementsByClassName('blog-btn');
-
+var blogCloseBtn = document.getElementById('blog-close-btn');
 
 
 // navBarA.forEach(elem => elem.addEventListener('click', smoothScroll));
@@ -62,7 +62,7 @@ for(var q = 0; q < blogBtn.length; q++){
     });
 };
 
-blogView[0].addEventListener('click', ()=>{
+blogCloseBtn.addEventListener('click', ()=>{
 blogView[0].style.display = 'none';
 
 });
