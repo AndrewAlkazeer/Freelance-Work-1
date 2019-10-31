@@ -1027,16 +1027,16 @@ margin-top: 20px;
  }
 
  .blog-small-cont{
-   position: absolute;
-   bottom: 0;
-   width: auto;
-   padding: 0;
+   position: relative !important;
+   top: 5% !important;
+   padding: 0 !important; /* Still needs some changes due to a problem happened for no reason making me change from absolute position to relative */
  }
 
  .blog-small-cont-li{
-  display: inline-block;
-  margin-right: 10px;
+  display: inline-block !important;
+  margin: 0 !important;
   font-family: 'Saira', sans-serif;
+
  }
 
  .blog-i{

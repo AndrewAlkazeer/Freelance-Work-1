@@ -29,6 +29,7 @@ var blogView = document.getElementsByClassName('blog-full-view');
 var blogBtn = document.getElementsByClassName('blog-btn');
 var blogCloseBtn = document.getElementById('blog-close-btn');
 var loader = document.getElementsByClassName('loader-screen');
+var blogViewImg = document.getElementsByClassName('blog-full-view-img');
 
 // navBarA.forEach(elem => elem.addEventListener('click', smoothScroll));
 /*
@@ -70,6 +71,9 @@ event.preventDefault();
 for(var q = 0; q < blogBtn.length; q++){
     blogBtn[q].addEventListener('click', ()=>{
         blogView[0].style.display = 'block';
+     //   var blogImg = imgCont[3].getAttribute('src');
+     //   blogViewImg[0].setAttribute('src', blogImg);
+        /* Change blog view img */
     });
 };
 
