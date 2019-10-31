@@ -158,6 +158,42 @@ closeBtn.addEventListener('click', ()=>{
     menuElements[6].style.transition = "none";
 });
 
+function mobileNavBtn(){
+    for(var l = 0; l < menuElements.length; l++){
+        menuElements[l].addEventListener('click', ()=>{
+            mobileMenu.classList.remove('menu-anime');
+            menuElements[0].style.top = "0%";
+            menuElements[0].style.transform = "translateY(-0%)";
+            menuElements[0].style.transition = "none";
+        
+            menuElements[1].style.top = "0%";
+            menuElements[1].style.transform = "translateY(-0%)";
+            menuElements[1].style.transition = "none";
+        
+            menuElements[2].style.top = "0%";
+            menuElements[2].style.transform = "translateY(-0%)";
+            menuElements[2].style.transition = "none";
+        
+            menuElements[3].style.top = "0%";
+            menuElements[3].style.transform = "translateY(-0%)";
+            menuElements[3].style.transition = "none";
+        
+            menuElements[4].style.top = "0%";
+            menuElements[4].style.transform = "translateY(-0%)";
+            menuElements[4].style.transition = "none";
+        
+            menuElements[5].style.top = "0%";
+            menuElements[5].style.transform = "translateY(-0%)";
+            menuElements[5].style.transition = "none";
+        
+            menuElements[6].style.top = "0%";
+            menuElements[6].style.transform = "translateY(-0%)";
+            menuElements[6].style.transition = "none";
+        });
+    }
+    
+}
+
 function navScroll(){
     window.addEventListener('scroll', ()=>{
         if(window.scrollY === 0 || window.scrollY < 690){
@@ -397,7 +433,7 @@ function navScroll(){
         setTimeout(()=>{setInterval('fadeImg()', 6000);}, 1000);
        // smoothScro();
        blogV();
-
+       mobileNavBtn();
         setTimeout(()=>{
         loader[0].style.WebkitTransitionDelay = '3s';
         loader[0].style.transitionDelay = '3s';
