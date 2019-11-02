@@ -17,6 +17,13 @@ body{
      background: black;
    }
 
+   .first-page-mobile{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: black;
+  }
+
    .first-page-img{
      position: absolute;
      width: 150%;
@@ -24,6 +31,15 @@ body{
      opacity: 0;
      top: -50%;
      left: -10%;
+   }
+
+   .first-page-img-mobile{
+     position: absolute;
+     top: 0;
+     left: 0%;
+     width: 160%;
+     height: 100%;
+     opacity: 0.5;
    }
 
    .first-page-name{
@@ -53,9 +69,10 @@ body{
    #arrow-down{
     position: absolute;
     font-size: xx-large;
-    bottom: 5%;
+    bottom: 10%;
     left: 50%;
     color: violet;
+    z-index: 1000;
    }
    
 /* Navbar */
@@ -106,12 +123,19 @@ body{
   border: 2px solid cyan;
 }
 
-.nav-li-a:hover, .mobile-menu-li-a:hover{
+.nav-li-a:hover{
   text-decoration: none;
   box-shadow:  0 0 20px  darkviolet;
   -moz-box-shadow: 0 0 20px  darkviolet;
   -webkit-box-shadow: 0 0 20px  darkviolet;
   -o-box-shadow: 0 0 20px  darkviolet;
+  transition: 300ms;
+  color: #fff;
+}
+
+.mobile-menu-li-a:hover{
+  text-decoration: none;
+  border-bottom: 2px solid violet;
   transition: 300ms;
   color: #fff;
 }
@@ -173,14 +197,11 @@ body{
   top: 50%;
   transform: translateY(-50%);
   padding: 0;
-  margin-right: 10px;
-  margin-left: 10px;
 }
 
 .mobile-menu-li{
-list-style-type: none;
-margin-top: 20px;
-
+  list-style-type: none;
+  margin-top: 20px;
   padding-right: 10px;
   padding-left: 10px;
   padding-top: 5px;
@@ -209,9 +230,6 @@ margin-top: 20px;
     height: auto;
     margin-top: 75px;
     margin-bottom: 75px;
-   }
-   
-   .welcome-page-row{
    }
    
    .cont{
@@ -760,7 +778,6 @@ margin-top: 20px;
    }
 
    .fifth-page-h1, .services-page-h1{
-    font-family: 'Oswald', sans-serif;
     font-weight: bold;
     margin: 0;
     margin-bottom: 5px;
@@ -1291,6 +1308,10 @@ margin-top: 20px;
   transition: 0.5s;
 }
 
+.reply-btn:focus{
+  outline: none;
+}
+
 .reply-btn:hover{
   box-shadow:  0 0 10px  cyan;
   -moz-box-shadow: 0 0 10px  cyan;
@@ -1341,7 +1362,7 @@ margin-top: 20px;
 .comments-form-cont{
   position: relative;
   width: 80%;
-  height: 50vh; /* Will change to auto later */
+  height: auto; /* Will change to auto later 50vh */
   left: 50%;
   transform: translateX(-50%);
   border-top: 2px solid #666;
@@ -1358,7 +1379,7 @@ margin-top: 20px;
 
 .comments-form-cont form{
   position: relative;
-  width: 350px;
+  width: 100%;
   height: auto;
 
   margin-left: 20px;
@@ -1374,7 +1395,11 @@ margin-top: 20px;
   background: transparent;
   border: none;
   border-bottom: 4px solid darkcyan;
-  color: green; /* Doesn't Work! */
+  
+}
+
+.comments-form-cont input::placeholder{
+  color: white;
 }
 
 .comments-form-cont input:focus{
@@ -1394,6 +1419,10 @@ margin-top: 20px;
   margin-top: 30px;
   margin-left: 30px;
   color: white;
+}
+
+.comments-form-cont button:hover{
+  border: 2px solid cyan;
 }
 
  .services-page-cont{
@@ -1431,7 +1460,7 @@ margin-top: 20px;
    left: 50%;
    transform: translateX(-50%);
    margin-top: 5px;
-   color: darkviolet;
+   color: darkcyan;
  }
 
  .service-title{
