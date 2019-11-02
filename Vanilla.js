@@ -6,6 +6,7 @@ var menuElements = document.getElementsByClassName('mobile-menu-li');
 var navBar = document.getElementById('nav-bar');
 var navBarA = document.getElementsByClassName('nav-li-a');
 var navBarMobile = document.getElementById('fa-bars');
+var navMobileA = document.getElementsByClassName('mobile-menu-li-a');
 var percentBar = document.getElementsByClassName('meter-percent');
 var experienceMeter = document.getElementsByClassName('experience-meter');
 var projectOne = document.getElementById('project-1');
@@ -27,12 +28,13 @@ var firstPageImg = document.getElementsByClassName('first-page-img');
 var navA = document.getElementsByClassName('nav-li-a');
 var blogView = document.getElementsByClassName('blog-full-view');
 var blogBtn = document.getElementsByClassName('blog-btn');
+var mobileBlogBtn = document.getElementsByClassName('mobile-blog-btn');
 var blogCloseBtn = document.getElementById('blog-close-btn');
 var loader = document.getElementsByClassName('loader-screen');
 var blogViewImg = document.getElementsByClassName('blog-full-view-img');
 
 // navBarA.forEach(elem => elem.addEventListener('click', smoothScroll));
-/*
+
 function smoothScro(){
 function smoothScroll(event){
     event.preventDefault();
@@ -50,8 +52,15 @@ navA[3].addEventListener('click', smoothScroll);
 navA[4].addEventListener('click', smoothScroll);
 navA[5].addEventListener('click', smoothScroll);
 navA[6].addEventListener('click', smoothScroll);
+navMobileA[0].addEventListener('click', smoothScroll);
+navMobileA[1].addEventListener('click', smoothScroll);
+navMobileA[2].addEventListener('click', smoothScroll);
+navMobileA[3].addEventListener('click', smoothScroll);
+navMobileA[4].addEventListener('click', smoothScroll);
+navMobileA[5].addEventListener('click', smoothScroll);
+navMobileA[6].addEventListener('click', smoothScroll);
 }
-*/
+
 
 function loader(){
     document.body.addEventListener('load', ()=>{
@@ -62,7 +71,39 @@ function loader(){
 
 
     
-}
+};
+
+function blogMobileV(){
+    event.preventDefault();
+
+    for(var q = 0; q < blogBtn.length; q++){
+        mobileBlogBtn[q].addEventListener('click', ()=>{
+            blogView[0].style.left = '0%';
+            blogView[0].style.transition = '1s';
+            blogView[0].style.clipPath = 'polygon(0 48%, 100% 52%, 100% 100%, 0 52%)';
+            
+            setTimeout(()=>{
+            blogView[0].style.clipPath = 'polygon(0 48%, 100% 52%, 100% 100%, 0 100%)';
+            }, 700);
+            setTimeout(()=>{
+            blogView[0].style.clipPath = 'polygon(0 48%, 100% 0%, 100% 100%, 0 100%)';
+            }, 900);
+            setTimeout(()=>{
+                blogView[0].style.clipPath = 'polygon(0 0%, 100% 0%, 100% 100%, 0 100%)';
+            }, 1100);
+        });
+    };
+    
+    blogCloseBtn.addEventListener('click', ()=>{
+        setTimeout(()=>{
+            blogView[0].style.left = '-100%';
+        }, 700);
+    
+    blogView[0].style.transition = '1s';
+    blogView[0].style.clipPath = 'polygon(0 48%, 100% 48%, 100% 52%, 0 52%)';
+    });
+    
+    }
 
 
 function blogV(){
@@ -70,7 +111,20 @@ event.preventDefault();
 
 for(var q = 0; q < blogBtn.length; q++){
     blogBtn[q].addEventListener('click', ()=>{
-        blogView[0].style.display = 'block';
+        blogView[0].style.left = '0%';
+        blogView[0].style.transition = '1s';
+        blogView[0].style.clipPath = 'polygon(0 48%, 100% 52%, 100% 100%, 0 52%)';
+        
+        setTimeout(()=>{
+        blogView[0].style.clipPath = 'polygon(0 48%, 100% 52%, 100% 100%, 0 100%)';
+        }, 700);
+        setTimeout(()=>{
+        blogView[0].style.clipPath = 'polygon(0 48%, 100% 0%, 100% 100%, 0 100%)';
+        }, 900);
+        setTimeout(()=>{
+            blogView[0].style.clipPath = 'polygon(0 0%, 100% 0%, 100% 100%, 0 100%)';
+        }, 1100);
+        
      //   var blogImg = imgCont[3].getAttribute('src');
      //   blogViewImg[0].setAttribute('src', blogImg);
         /* Change blog view img */
@@ -78,8 +132,12 @@ for(var q = 0; q < blogBtn.length; q++){
 };
 
 blogCloseBtn.addEventListener('click', ()=>{
-blogView[0].style.display = 'none';
+    setTimeout(()=>{
+        blogView[0].style.left = '-100%';
+    }, 700);
 
+blogView[0].style.transition = '1s';
+blogView[0].style.clipPath = 'polygon(0 48%, 100% 48%, 100% 52%, 0 52%)';
 });
 
 }
@@ -197,40 +255,40 @@ function mobileNavBtn(){
 function navScroll(){
     window.addEventListener('scroll', ()=>{
         if(window.scrollY === 0 || window.scrollY < 690){
-            navA[0].style.border = "2px solid cyan";
+            navBarA[0].style.border = "2px solid cyan";
         } else{
-            navA[0].style.border = "2px solid violet";
+            navBarA[0].style.border = "2px solid violet";
         }
 
         if(window.scrollY === 757 || window.scrollY > 690 && window.scrollY < 1720){
-            navA[1].style.border = "2px solid cyan";
+            navBarA[1].style.border = "2px solid cyan";
         } else{
-            navA[1].style.border = "2px solid violet";
+            navBarA[1].style.border = "2px solid violet";
         }
         if(window.scrollY === 1720 || window.scrollY > 1720 && window.scrollY < 2495){
-            navA[2].style.border = "2px solid cyan";
+            navBarA[2].style.border = "2px solid cyan";
         } else{
-            navA[2].style.border = "2px solid violet";
+            navBarA[2].style.border = "2px solid violet";
         }
         if(window.scrollY === 2965 || window.scrollY > 2495 && window.scrollY < 2965){
-            navA[3].style.border = "2px solid cyan";
+            navBarA[3].style.border = "2px solid cyan";
         } else{
-            navA[3].style.border = "2px solid violet";
+            navBarA[3].style.border = "2px solid violet";
         }
         if(window.scrollY === 2965 || window.scrollY > 2965 && window.scrollY < 3553){
-            navA[4].style.border = "2px solid cyan";
+            navBarA[4].style.border = "2px solid cyan";
         } else{
-            navA[4].style.border = "2px solid violet";
+            navBarA[4].style.border = "2px solid violet";
         }
         if(window.scrollY === 3553 || window.scrollY > 3553 && window.scrollY < 4063){
-            navA[5].style.border = "2px solid cyan";
+            navBarA[5].style.border = "2px solid cyan";
         } else{
-            navA[5].style.border = "2px solid violet";
+            navBarA[5].style.border = "2px solid violet";
         }
         if(window.scrollY === 4063 || window.scrollY > 4063){
-            navA[6].style.border = "2px solid cyan";
+            navBarA[6].style.border = "2px solid cyan";
         } else{
-            navA[6].style.border = "2px solid violet";
+            navBarA[6].style.border = "2px solid violet";
         }
     })
 }
@@ -432,8 +490,9 @@ function navScroll(){
         timerTwo = setInterval('blogSlider()', 2000);
         setTimeout(()=>{setInterval('fadeImg()', 6000);}, 1000);
        // smoothScro();
-       blogV();
-       mobileNavBtn();
+        blogV();
+        blogMobileV();
+        mobileNavBtn();
         setTimeout(()=>{
         loader[0].style.WebkitTransitionDelay = '3s';
         loader[0].style.transitionDelay = '3s';
@@ -557,14 +616,14 @@ firstPage.addEventListener('mouseenter', ()=>{
 
 function changeColor(elem){
 
-    for(var j = 0; j < navA.length; j++){
-            navA[j].style.border = "2px solid violet";
-            navA[j].style.transition = "1s";
+    for(var j = 0; j < navBarA.length; j++){
+            navBarA[j].style.border = "2px solid violet";
+            navBarA[j].style.transition = "1s";
     }
 
-    navA[elem].style.border = "2px solid cyan";
-    navA[elem].style.transition = "1s";
-    navA[elem].style.textDecoration = "none";
-    navA[elem].style.color = "white";
+    navBarA[elem].style.border = "2px solid cyan";
+    navBarA[elem].style.transition = "1s";
+    navBarA[elem].style.textDecoration = "none";
+    navBarA[elem].style.color = "white";
     
 }

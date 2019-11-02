@@ -1,3 +1,7 @@
+html{
+  scroll-behavior: smooth;
+ }
+
 body{
     margin-left: 10px;
     margin-right: 10px;
@@ -353,12 +357,11 @@ margin-top: 20px;
    .li-smedia-a-i{
      position: relative;
      list-style-type: none;
- 
      text-align: center;
      line-height: 40px;
      border-radius: 10px;
-     width: 40px;
-     height: 40px;
+     width: 30px;
+     height: 30px;
    }
    
    .fa-facebook{
@@ -882,7 +885,7 @@ margin-top: 20px;
    height: 90%;
    background: white;
    -webkit-transition: 2s;
-   top: 30%;
+   top: 28%;
    transform: translateY(-30%);
  }
  
@@ -925,7 +928,7 @@ margin-top: 20px;
 
  .mobile-blog-cont{
   width: 100%;
-  height: 60vh;
+  height: auto;
   background: white;
  }
 
@@ -966,11 +969,12 @@ margin-top: 20px;
  }
 
  .mobile-blog-small-cont{
-  position: absolute;
+  position: relative;
   bottom: 0;
   width: auto;
   padding: 0;
   margin-left: 50px;
+  margin-top: 10px;
 }
  
  
@@ -1010,6 +1014,9 @@ margin-top: 20px;
  }
 
  .blog-btn{
+   position: relative;
+   left: 50%;
+   transform: translateX(-50%);
    background: transparent;
    border: none;
    border: 2px solid darkcyan;
@@ -1036,7 +1043,17 @@ margin-top: 20px;
  .blog-small-cont-li{
   display: inline-block !important;
   margin: 0 !important;
+  padding: 0 !important;
   font-family: 'Saira', sans-serif;
+  font-size: 12px !important;
+ }
+
+ .blog-small-cont-li-full-view{
+  display: inline-block !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  font-family: 'Saira', sans-serif;
+  font-size: 15px !important;
  }
 
  .blog-i{
@@ -1053,7 +1070,9 @@ margin-top: 20px;
    top: 0;
    z-index: 200;
    overflow-y: auto;
-   display: none;  /* not fixed yet */
+   clip-path: polygon(0 48%, 100% 48%, 100% 52%, 0 52%);
+   left: -100%;
+     /* Working here */
  }
 
  #blog-close-btn{
@@ -1090,26 +1109,26 @@ margin-top: 20px;
   height: 100%;
 }
 
-.blog-small-cont{
-   position: absolute;
-   bottom: 0;
-   width: auto;
-   padding: 0;
-   right: 10px;
-   background: white;
-   padding-left: 10px;
-   border-radius: 5px;
+.blog-small-cont-mobile{
+   position: absolute !important;
+   bottom: 0 !important;
+   width: auto !important;
+   padding: 0 !important;
+   right: 10px !important;
+   background: white !important;
+   padding-left: 10px !important;
+   border-radius: 5px !important;
  }
 
  .blog-small-cont-li{
-  display: inline-block;
-  margin-right: 10px;
-  font-family: 'Saira', sans-serif;
+   display: inline-block;
+   margin-right: 10px;
+   font-family: 'Saira', sans-serif;
    font-size: 15px;
  }
 
  .blog-i{
-  color: darkcyan;
+   color: darkcyan;
  }
 
  .blog-full-view-title{
@@ -1459,11 +1478,10 @@ margin-top: 20px;
 
  #ul-smedia{
    position: relative;
-   width: 452px;
+   width: 360px;
    height: 30px;
    left: 50%;
    transform: translate(-50%);
-
  }
 
  #ul-smedia li{
@@ -1478,6 +1496,7 @@ margin-top: 20px;
  #ul-smedia li a{
   padding-bottom: 0px;
   border: 2px solid cyan;
+  
  }
 
  #ul-smedia li a:hover{
@@ -1486,8 +1505,8 @@ margin-top: 20px;
  }
 
  #ul-smedia li{
-   margin-left: 2px;
-   margin-right: 2px;
+   margin-left: 1px;
+   margin-right: 1px;
  }
 
  /* Loader Screen */
@@ -1498,7 +1517,6 @@ margin-top: 20px;
    height: 100vh;
    background: violet;
    z-index: 500;
-  
  }
 
  .loader {
