@@ -101,14 +101,16 @@ function darkMode(){
             for(var i = 0; i < experienceP.length; i++){
                 experienceP[i].style.color = '#fff';
             }
+            /*
             for(var i = 0; i < experienceMeter.length; i++){
                 experienceMeter[i].style.background = 'linear-gradient(to right, black, #212121)';
             }
+            */
             experiencePageBtn[0].style.color = '#fff';
             experiencePageBtn[0].style.border = '2px solid grey';
             experiencePageBtnI[0].style.color = '#fff';
             experiencePage2H1[0].style.color = '#fff';
-            experiencePage2Line[0].style.background = 'linear-gradient(to right, black, #212121, black)';
+        //    experiencePage2Line[0].style.background = 'linear-gradient(to right, black, #212121, black)';
             for(var i = 0; i < experiencePage2P.length; i++){
                 experiencePage2P[i].style.color = '#fff';
             }
@@ -167,14 +169,16 @@ function darkMode(){
             for(var i = 0; i < experienceP.length; i++){
                 experienceP[i].style.color = '#000';
             }
+            /*
             for(var i = 0; i < experienceMeter.length; i++){
                 experienceMeter[i].style.background = 'linear-gradient(to left, darkcyan, violet)';
             }
+            */
             experiencePageBtn[0].style.color = '#000';
             experiencePageBtn[0].style.border = '2px solid cyan';
             experiencePageBtnI[0].style.color = '#000';
             experiencePage2H1[0].style.color = '#000';
-            experiencePage2Line[0].style.background = 'linear-gradient(to right, cyan, violet)';
+          //  experiencePage2Line[0].style.background = 'linear-gradient(to right, cyan, violet)';
             for(var i = 0; i < experiencePage2P.length; i++){
                 experiencePage2P[i].style.color = '#000';
             }
