@@ -697,7 +697,7 @@ body{
     color: silver;
    }
 
-   .fourth-page-reviews-cont{
+   .reviews-page-cont{
      background: #fff;
      margin-top: 75px;
      margin-bottom: 75px;
@@ -884,11 +884,11 @@ body{
 
 /* Image Slider */
   
-.big-cont{
+.blog-page-big-cont{
   position: relative;
    width: 100%;
    height: 70vh;
-   background: white;
+   background: #fff;
    margin-top: 75px;
  }
  
@@ -1454,7 +1454,7 @@ body{
   border: 2px solid cyan;
 }
 
- .services-page-cont{
+ .services-page-big-cont{
   margin-top: 75px;
   background: #fff;
   height: auto;
@@ -1466,7 +1466,7 @@ body{
 
  .services-cont{
    height: auto;
-   background: white;
+   background: #fff;
    margin-bottom: 75px;
    margin-top: 20px;
   
@@ -1717,7 +1717,7 @@ body{
 
  @media screen and (max-width: 991px){
 
-  .big-cont{
+  .blog-page-big-cont{
     display: none;
   }
 

@@ -56,6 +56,24 @@ var faCheck3 = document.getElementById('fa-check3');
 var faCheck4 = document.getElementById('fa-check4');
 var faCheck5 = document.getElementById('fa-check5');
 var projectsPageH1 = document.getElementsByClassName('projects-page-h1');
+var reviewsPageCont = document.getElementsByClassName('reviews-page-cont');
+var reviewerComment = document.getElementsByClassName('reviewer-comment');
+var reviewerName = document.getElementsByClassName('reviewer-name');
+var reviewerTitle = document.getElementsByClassName('reviewer-title');
+var blogPageBigCont = document.getElementsByClassName('blog-page-big-cont');
+var blogH1 = document.getElementsByClassName('blog-h1');
+var leftWall = document.getElementsByClassName('left-wall');
+var rightWall = document.getElementsByClassName('right-wall');
+var imgsCont = document.getElementsByClassName('imgs-cont');
+var blogParagraph = document.getElementsByClassName('blog-paragraph');
+var blogBtn = document.getElementsByClassName('blog-btn');
+var blogSmallContLi = document.getElementsByClassName('blog-small-cont-li');
+
+var servicesPageBigCont = document.getElementsByClassName('services-page-big-cont');
+var servicesPageH1 = document.getElementsByClassName('services-page-h1');
+var servicesCont = document.getElementsByClassName('services-cont');
+var serviceTitle = document.getElementsByClassName('service-title');
+var servicePara = document.getElementsByClassName('service-para');
 
 function darkMode(){
     darkModeBtn[0].addEventListener('click', ()=>{
@@ -75,9 +93,11 @@ function darkMode(){
             experiencePageRow[0].style.background = '#212121'
             projectsPageRow[0].style.background = '#212121';
             experienceTitle[0].style.color = '#fff';
+            /*
             for(var i = 0; i < line.length; i++){
                 line[i].style.background = 'linear-gradient(to right, black, #212121, black)';
             }
+            */
             for(var i = 0; i < experienceP.length; i++){
                 experienceP[i].style.color = '#fff';
             }
@@ -101,6 +121,31 @@ function darkMode(){
             for(var i = 0; i < hiddenMenu.length; i++){
                 hiddenMenu[i].style.background = '#424242';
             }
+            reviewsPageCont[0].style.background = '#212121';
+            for(var i = 0; i < reviewerComment.length; i++){
+                reviewerComment[i].style.color = '#fff';
+                reviewerName[i].style.color = '#fff';
+                reviewerTitle[i].style.color = '#fff';
+            }
+            blogPageBigCont[0].style.background = '#212121';
+            blogH1[0].style.color = '#fff';
+            leftWall[0].style.background = '#212121';
+            rightWall[0].style.background = '#212121';
+            imgsCont[0].style.background = '#212121';
+            for(var i = 0; i < blogParagraph.length; i++){
+                blogParagraph[i].style.color = '#fff';
+                blogBtn[i].style.color = '#fff';
+            }
+            for(var i = 0; i < blogSmallContLi.length; i++){
+                blogSmallContLi[i].style.color = '#fff';
+            }
+            servicesPageBigCont[0].style.background = '#212121';
+            servicesPageH1[0].style.color = '#fff';
+            servicesCont[0].style.background = '#212121';
+            for(var i = 0; i < serviceTitle.length; i++){
+                serviceTitle[i].style.color = '#fff';
+                servicePara[i].style.color = 'grey';
+            }
         } else{
             document.body.style.background = 'linear-gradient(to right top, violet, cyan, darkviolet)';
             aboutPageCont[0].style.background = '#fff';
@@ -114,9 +159,11 @@ function darkMode(){
             experiencePageRow[0].style.background = '#fff'
             projectsPageRow[0].style.background = '#fff';
             experienceTitle[0].style.color = '#000';
+            /*
             for(var i = 0; i < line.length; i++){
                 line[i].style.background = 'linear-gradient(to right, cyan, violet)';
             }
+            */
             for(var i = 0; i < experienceP.length; i++){
                 experienceP[i].style.color = '#000';
             }
@@ -139,6 +186,31 @@ function darkMode(){
             projectsPageH1[0].style.color = '#000';
             for(var i = 0; i < hiddenMenu.length; i++){
                 hiddenMenu[i].style.background = 'linear-gradient(to left, darkcyan, violet)';
+            }
+            reviewsPageCont[0].style.background = '#fff';
+            for(var i = 0; i < reviewerComment.length; i++){
+                reviewerComment[i].style.color = '#000';
+                reviewerName[i].style.color = '#000';
+                reviewerTitle[i].style.color = '#000';
+            }
+            blogPageBigCont[0].style.background = '#fff';
+            blogH1[0].style.color = '#000';
+            leftWall[0].style.background = '#fff';
+            rightWall[0].style.background = '#fff';
+            imgsCont[0].style.background = '#fff';
+            for(var i = 0; i < blogParagraph.length; i++){
+                blogParagraph[i].style.color = '#000';
+                blogBtn[i].style.color = '#000';
+            }
+            for(var i = 0; i < blogSmallContLi.length; i++){
+                blogSmallContLi[i].style.color = '#000';
+            }
+            servicesPageBigCont[0].style.background = '#fff';
+            servicesPageH1[0].style.color = '#000';
+            servicesCont[0].style.background = '#fff';
+            for(var i = 0; i < serviceTitle.length; i++){
+                serviceTitle[i].style.color = '#000';
+                servicePara[i].style.color = 'grey';
             }
         }
     });
