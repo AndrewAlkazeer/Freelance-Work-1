@@ -3,6 +3,7 @@
     <title>Personal Portfolio</title>
     <link rel = "stylesheet" type = "text/css" href = "index.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Oswald:700&display=swap" rel="stylesheet">
@@ -17,6 +18,11 @@
 
 <div class="loader-screen">
   <span class="loader"><span class="loader-inner"></span></span>
+</div>
+
+<div class="dark-mode-cont">
+  <i class="glyphicon glyphicon-cog"></i>
+  <div class="dark-mode-btn"><div class="btn-circle"></div></div>
 </div>
 
     <div class="hide-mobile-menu" id="hide-mobile-menu">
@@ -89,7 +95,7 @@
 -->
 <!-- removing profile img and resume btn -->
 
-                    <div class="col-lg-8 col-lg-push-2 col-md-8 col-md-push-2 col-sm col-xs">
+                    <div class="col-lg-8 col-lg-push-2 col-md-8 col-md-push-2 col-sm col-xs about-page-big-cont">
                       <div class="profile-info">
                         <h1 class="profile-info-h1">HI I'M <span class="profile-info-h1-span">Nick Jackson</span></h1>
                         <h3 class="profile-info-h3">Web Developer & Designer</h3>
@@ -101,15 +107,15 @@
                           <ul class="ul-info">
                             <li class="li-info">
                               <span class="span-info-left-1">Age</span>
-                              <span class="span-info-right-1">30</span>
+                              <span class="span-info-right-1 span-info-right">30</span>
                             </li>
                             <li class="li-info">
                               <span class="span-info-left-2">Address</span>
-                              <span class="span-info-right-2"> 6235, London, Earth, BE 45</span>
+                              <span class="span-info-right-2 span-info-right"> 6235, London, Earth, BE 45</span>
                             </li>
                             <li class="li-info">
                               <span class="span-info-left-3">Email</span>
-                              <span class="span-info-right-3">loremiptsum@outlook.com</span>
+                              <span class="span-info-right-3 span-info-right">loremiptsum@outlook.com</span>
                             </li>
                           </ul>
                         </div>
@@ -118,15 +124,15 @@
                           <ul class="ul-info">
                             <li class="li-info">
                               <span class="span-info-left-1">Phone</span>
-                              <span class="span-info-right-1">+1 615 000 0000</span>
+                              <span class="span-info-right-1 span-info-right">+1 615 000 0000</span>
                             </li>
                             <li class="li-info">
                               <span class="span-info-left-2">Website</span>
-                              <span class="span-info-right-2"> www.websitename.com</span>
+                              <span class="span-info-right-2 span-info-right"> www.websitename.com</span>
                             </li>
                             <li class="li-info">
                               <span class="span-info-left-3">Nationality</span>
-                              <span class="span-info-right-3">American</span>
+                              <span class="span-info-right-3 span-info-right">American</span>
                             </li>
                           </ul>
                         </div>
@@ -151,13 +157,13 @@
                 </div>
               </div>
 
-              <div class="second-page-cont">
+              <div class="experience-page-big-cont">
 
                 <div class="container cont-2">
                  
-                  <div class="row second-page-row">
+                  <div class="row experience-page-row">
                  <div class="div-h1-cont col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <h1 class="second-page-h1">EXPERIENCE</h1>
+                    <h1 class="experience-title">EXPERIENCE</h1>
                     <div class="line"></div>
                   </div>
 
@@ -174,18 +180,18 @@
                       <p class="experience-meter-p">Vanilla JS</p>
                       <div class="experience-meter-cont"><div class="experience-meter"><span class="meter-percent" data-target="35%">35%</span></div></div>
                   </div>
-                  <button class="second-page-experience-btn"><i class="glyphicon glyphicon-download-alt second-page-experience-btn-i"></i>Download Resume</button>
+                  <button class="experience-page-btn"><i class="glyphicon glyphicon-download-alt experience-page-btn-i"></i>Download Resume</button>
                   </div>
 
                   <div class="second-page-experience-2 col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                    <h1 class="second-page-experience-2-h1">7 years experienced in Web Development and Design.</h1>
-                    <div class="second-page-experience-2-line"></div>
+                    <h1 class="experience-page-2-h1">7 years experienced in Web Development and Design.</h1>
+                    <div class="experience-page-2-line"></div>
                     <ul class="second-page-experience-2-ul">
-                      <li class="second-page-experience-2-li"><i class="second-page-experience-2-i fa fa-check-square-o" id="fa-check"></i><p class="second-page-experience-2-p">Building Dynamic web pages using Angular with HttpClient method.</p></li>
-                      <li class="second-page-experience-2-li"><i class="second-page-experience-2-i fa fa-check-square-o" id="fa-check"></i><p class="second-page-experience-2-p">Building Static web pages using HTML5, CSS3, and Javascript.</p></li>
-                      <li class="second-page-experience-2-li"><i class="second-page-experience-2-i fa fa-check-square-o" id="fa-check"></i><p class="second-page-experience-2-p">Building Dynamic web pages using Angular with HttpClient method.</p></li>
-                      <li class="second-page-experience-2-li"><i class="second-page-experience-2-i fa fa-check-square-o" id="fa-check"></i><p class="second-page-experience-2-p">Building Dynamic web pages using Angular with HttpClient method.</p></li>
-                      <li class="second-page-experience-2-li"><i class="second-page-experience-2-i fa fa-check-square-o" id="fa-check"></i><p class="second-page-experience-2-p">Building Dynamic web pages using Angular with HttpClient method.</p></li>
+                      <li class="experience-page-2-li"><i class="experience-page-2-i fa fa-check-square-o" id="fa-check1"></i><p class="experience-page-2-p">Building Dynamic web pages using Angular with HttpClient method.</p></li>
+                      <li class="experience-page-2-li"><i class="experience-page-2-i fa fa-check-square-o" id="fa-check2"></i><p class="experience-page-2-p">Building Static web pages using HTML5, CSS3, and Javascript.</p></li>
+                      <li class="experience-page-2-li"><i class="experience-page-2-i fa fa-check-square-o" id="fa-check3"></i><p class="experience-page-2-p">Building Dynamic web pages using Angular with HttpClient method.</p></li>
+                      <li class="experience-page-2-li"><i class="experience-page-2-i fa fa-check-square-o" id="fa-check4"></i><p class="experience-page-2-p">Building Dynamic web pages using Angular with HttpClient method.</p></li>
+                      <li class="experience-page-2-li"><i class="experience-page-2-i fa fa-check-square-o" id="fa-check5"></i><p class="experience-page-2-p">Building Dynamic web pages using Angular with HttpClient method.</p></li>
                     </ul>
                   </div>
 
@@ -195,17 +201,17 @@
                 <div id="projects-page" style="position: absolute; bottom: 0;"></div>
               </div>
 
-              <div class="second-page-cont">
+              <div class="projects-page-big-cont">
 
                   <div class="container cont-3">
                    
-                    <div class="row second-page-row">
+                    <div class="row projects-page-row">
                    <div class="div-h1-cont col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                      <h1 class="third-page-h1">PROJECTS</h1>
+                      <h1 class="projects-page-h1">PROJECTS</h1>
                       <div class="line"></div>
                     </div>
   
-                    <div class="third-page-projects col-lg-12">
+                    <div class="col-lg-12">
 
                       <!-- Bootstrap location needs to be fixed -->
                       <div class="projects-cont col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -536,12 +542,12 @@
               <div class="fifth-page-contact-cont container">
                 <div class="row fifth-page-contact-row">
                   
-                  <div class="div-h1-cont col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                  <div class="div-h1-cont col-lg-12 col-md-12 col-sm-12 col-xs-12 contact-title-cont">
                     <h1 class="fifth-page-h1">CONTACT</h1>
                     <div class="line"></div>
                     <p class="contact-message">Interested? Lets get in Touch. I will get back to you ASAP!</p>
                   </div>
-                  <div class="col-lg-8 col-md-10 col-sm-10 col-xs-12 contact-cont">
+                  <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 contact-cont">
                    
                     <form class="contact-form">
                       <input type="text" placeholder="Your Name" class="contact-form-input" required/>
@@ -550,8 +556,18 @@
                       <br />
                       <button type="submit" class="contact-form-btn">SEND</button>
                     </form>
-                   
                   </div>
+
+                  <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 contact-cont-2">
+                    <ul>
+                      <li><i class="fa fa-map-marker"></i> 6235, London, Earth, BE 45</li>
+                      <li><i class="fa fa-at"></i>  loremiptsum@outlook.com</li>
+                      <li><i class="fa fa-phone"></i>  +1 615 000 0000</li>
+                      <li><i class="fa fa-link"></i>  www.websitename.com</li>
+                    </ul>
+
+                  </div>
+
                 </div>
              </div>
 

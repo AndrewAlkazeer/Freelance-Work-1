@@ -241,10 +241,7 @@ body{
      -o-box-shadow: 0 0 10px  rgba(0,0,0,0.6);
      background: #fff;
    }
-   
-   .col-lg-4{
-   }
-   
+   /*
    .profile-img{
      width: 100%;
      height: auto;
@@ -291,9 +288,9 @@ body{
     font-size: large;
    }
 
-   .col-lg-8{
-   }
+   .about-page-big-cont{     /* Working Here  */
    
+   */
    .profile-info-h1{
      font-family: 'Oswald', sans-serif;
      display: inline-block;
@@ -320,9 +317,7 @@ body{
      font-size: 15px;
      letter-spacing: 0.6px;
      font-family: 'Titillium Web', sans-serif;
-   }
-   
-   .col-lg-6{
+     line-height: 1.5em;
    }
    
    .ul-info{
@@ -355,7 +350,7 @@ body{
 
    .title-links{
      font-size: 15px;
-     
+     color: #000;
    }
    
    .ul-smedia{
@@ -419,13 +414,14 @@ body{
      transition: 0.5s;
    }
 
-   .second-page-cont{
+   .experience-page-big-cont, .projects-page-big-cont{
      position: relative;
      width: 100%;
      height: auto;
+     margin-top: 75px;
    }
 
-   .second-page-row{
+   .projects-page-row, .experience-page-row{
      background: white;
      box-shadow:  0 0 10px  rgba(0,0,0,0.6);
      -moz-box-shadow: 0 0 10px  rgba(0,0,0,0.6);
@@ -440,7 +436,7 @@ body{
      height: 50px;
    }
 
-   .second-page-h1{
+   .experience-title{
     font-family: 'Oswald', sans-serif;
     font-weight: bold;
     margin: 0;
@@ -459,6 +455,7 @@ body{
      left: 50%;
      transform: translateX(-50%);
      border-radius: 10px;
+     /* background: linear-gradient(to right, black, #212121, black); */
    }
 
    .experience-cont{
@@ -503,6 +500,8 @@ body{
      background: linear-gradient(to left, darkcyan, violet);
      margin-bottom: 10px;
      border-radius: 25px;
+     /* background: linear-gradient(to left, #212121, #424242); */
+     /* background: linear-gradient(to right, black, #212121); */
    }
 
    .meter-percent{
@@ -513,7 +512,7 @@ body{
      font-weight: bold;
    }
 
-   .second-page-experience-btn{
+   .experience-page-btn{
      position: relative;
      left: 50%;
      transform: translateX(-50%);
@@ -526,7 +525,7 @@ body{
      margin-bottom: 20px;
    }
 
-   .second-page-experience-btn-i{
+   .experience-page-btn-i{
      font-size: 17px;
      margin-right: 5px;
    }
@@ -535,12 +534,12 @@ body{
      margin-top: 20px;
    }
 
-   .second-page-experience-2-h1{
+   .experience-page-2-h1{
     font-family: 'Anton', sans-serif;
     font-size: 25px;
    }
 
-   .second-page-experience-2-line{
+   .experience-page-2-line{
     position: relative;
     width: 100px;
     height: 4px;
@@ -554,15 +553,11 @@ body{
     margin-top: 30px;
   }
 
-  .second-page-experience-2-li{
+  .experience-page-2-li{
     display: inline-block;
   }
 
-  .second-page-experience-2-i{
-    
-  }
-
-  #fa-check{
+  #fa-check1, #fa-check2, #fa-check3, #fa-check4, #fa-check5{
     float: left;
     margin-top: 2px;
     font-size: 18px;
@@ -570,7 +565,11 @@ body{
     color: darkcyan;
   }
 
-  .second-page-experience-2-p{
+  #fa-check-toggle{
+    color: grey;
+  }
+
+  .experience-page-2-p{
     position: relative;
     font-size: 17px;
     width: 90%;
@@ -579,11 +578,7 @@ body{
     color:grey;
   }
 
-   .second-page-cont{
-     margin-top: 75px;
-   }
-
-   .third-page-h1{
+   .projects-page-h1{
     font-family: 'Oswald', sans-serif;
     font-weight: bold;
     margin: 0;
@@ -699,6 +694,7 @@ body{
     top: 90%;
     transform: translate(-50%, -95%);
     transition: 0.5s;
+    color: silver;
    }
 
    .fourth-page-reviews-cont{
@@ -787,16 +783,45 @@ body{
     line-height: 1.3em;
    }
 
+   .contact-title-cont{
+     margin-bottom: 70px;
+   }
+
    .contact-cont{
      position: relative;
-     left: 50%;
-     transform: translateX(-50%);
+   }
+
+   .contact-cont-2{
+     position: relative;
+   }
+
+   .contact-cont-2 ul{
+    position: relative; 
+    padding: 0;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    width: 400px;
+    left: 50%;
+    transform: translateX(-50%);
+   }
+
+   .contact-cont-2 ul li{
+     list-style-type: none;
+     font-size: large;
+     margin-top: 20px;
+     font-family: 'Saira', sans-serif;
+     color: grey;
+   }
+
+   .contact-cont-2 ul li i{
+     font-size: x-large;
+     color: darkcyan;
+     margin-right: 20px;
    }
 
    .contact-message{
      position: relative;
      margin-top: 20px;
-     
      font-size: large;
      font-family: 'Saira', sans-serif;
      text-align: center;
@@ -804,16 +829,17 @@ body{
 
    .contact-form{
      position: relative;
-     margin-top: 90px;
+  
      left: 50%;
      transform: translateX(-50%);
      width: 90%;
-     margin-bottom: 30px;
+     margin-top: 30px;
      height: 300px;
+
    }
 
    .contact-form-input{
-     width: 60%;
+     width: 80%;
      position: relative;
      left: 50%;
      transform: translateX(-50%);
@@ -1063,6 +1089,7 @@ body{
   padding: 0 !important;
   font-family: 'Saira', sans-serif;
   font-size: 12px !important;
+  font-weight: bold;
  }
 
  .blog-small-cont-li-full-view{
@@ -1214,11 +1241,13 @@ body{
 
 .divider{
   position: relative;
-  width: 100%;
+  width: 80%;
   height: 2px;
-  background: linear-gradient(to top right, violet, cyan);
+  background: grey;
   margin-top: 40px;
   margin-bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .comments-cont{
@@ -1435,9 +1464,6 @@ body{
   -o-box-shadow: 0 0 10px  rgba(0,0,0,0.6);
 }
 
- .services-page-row{
- }
-
  .services-cont{
    height: auto;
    background: white;
@@ -1450,7 +1476,7 @@ body{
    position: relative;
    width: 100%;
    height: auto;
-   background: lightgrey;
+   background: transparent;
    clip-path: polygon(10% 0, 90% 0, 100% 10%, 100% 90%, 90% 100%, 10% 100%, 0 90%, 0 10%);
    margin-top: 15px;
  }
@@ -1614,6 +1640,78 @@ body{
 }
 
 /* Loader Screen */
+
+/* Dark Mode Button */
+
+.dark-mode-cont{
+  position: fixed;
+  width: auto;
+  height: auto;
+  background: silver;
+  z-index: 400;
+  top: 30%;
+  right: -70px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  transition: 1s;
+  z-index: 7;
+}
+
+.dark-mode-cont:hover{
+  right: 0;
+  transition: 1s;
+}
+
+.dark-mode-cont i{
+  font-size: x-large;
+  float: left;
+  margin-right: 10px;
+  margin-left: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  animation: 4s rotation infinite;
+}
+
+.dark-mode-btn{
+  width: 60px;
+  height: 30px;
+  float: left;
+  border-radius: 25px;
+  border: 2px solid grey;
+  background: white;
+  margin-top: 5px;
+  transition: 0.5s;
+  margin-right: 5px;
+}
+
+.btn-circle{
+  position: relative;
+  width: 50%;
+  height: 100%;
+  border-radius: 25px;
+  border: 3px solid grey;
+  left: 100%;
+  transform: translateX(-100%);
+  background: linear-gradient(to right, violet, cyan);
+  transition: 0.5s;
+}
+
+.toggle-btn{
+  left: 0%;
+  transform: translateX(0%);
+  transition: 0.5s;
+}
+
+.toggle-btn-cont{
+  background: black;
+}
+
+@keyframes rotation {
+  from{transform: rotate(0deg)}
+  to{transform: rotate(360deg)}
+}
+
+/* Dark Mode Button */
 
  /* Some Mobile size changes */
 

@@ -32,9 +32,121 @@ var mobileBlogBtn = document.getElementsByClassName('mobile-blog-btn');
 var blogCloseBtn = document.getElementById('blog-close-btn');
 var loader = document.getElementsByClassName('loader-screen');
 var blogViewImg = document.getElementsByClassName('blog-full-view-img');
+var darkModeBtn = document.getElementsByClassName('dark-mode-btn');
+var darkModeBtnCircle = document.getElementsByClassName('btn-circle');
+var aboutPageCont = document.getElementsByClassName('cont');
+var aboutPageH1 = document.getElementsByClassName('profile-info-h1');
+var aboutPageH3 = document.getElementsByClassName('profile-info-h3');
+var aboutPageH4 = document.getElementsByClassName('profile-info-h4');
+var aboutPageSpanRight = document.getElementsByClassName('span-info-right');
+var socialTitle = document.getElementsByClassName('title-links');
+var experiencePageRow = document.getElementsByClassName('experience-page-row');
+var projectsPageRow = document.getElementsByClassName('projects-page-row');
+var experienceTitle = document.getElementsByClassName('experience-title');
+var line = document.getElementsByClassName('line');
+var experienceP = document.getElementsByClassName('experience-meter-p');
+var experiencePageBtn = document.getElementsByClassName('experience-page-btn');
+var experiencePageBtnI = document.getElementsByClassName('experience-page-btn-i');
+var experiencePage2H1 = document.getElementsByClassName('experience-page-2-h1');
+var experiencePage2Line = document.getElementsByClassName('experience-page-2-line');
+var experiencePage2P = document.getElementsByClassName('experience-page-2-p');
+var faCheck1 = document.getElementById('fa-check1');
+var faCheck2 = document.getElementById('fa-check2');
+var faCheck3 = document.getElementById('fa-check3');
+var faCheck4 = document.getElementById('fa-check4');
+var faCheck5 = document.getElementById('fa-check5');
+var projectsPageH1 = document.getElementsByClassName('projects-page-h1');
+
+function darkMode(){
+    darkModeBtn[0].addEventListener('click', ()=>{
+        darkModeBtnCircle[0].classList.toggle('toggle-btn');
+        darkModeBtn[0].classList.toggle('toggle-btn-cont');
+        console.log(document.body.style.background);
+        if(document.body.style.background !== 'linear-gradient(to right top, black, grey, black)'){
+            document.body.style.background = 'linear-gradient(to right top, black, grey, black)';
+            aboutPageCont[0].style.background = '#212121';
+            aboutPageH1[0].style.color = '#fff';
+            aboutPageH3[0].style.color = '#fff';
+            aboutPageH4[0].style.color = '#fff';
+            for(var i = 0; i < aboutPageSpanRight.length; i++){
+                aboutPageSpanRight[i].style.color = '#fff';
+            }
+            socialTitle[0].style.color = '#fff';
+            experiencePageRow[0].style.background = '#212121'
+            projectsPageRow[0].style.background = '#212121';
+            experienceTitle[0].style.color = '#fff';
+            for(var i = 0; i < line.length; i++){
+                line[i].style.background = 'linear-gradient(to right, black, #212121, black)';
+            }
+            for(var i = 0; i < experienceP.length; i++){
+                experienceP[i].style.color = '#fff';
+            }
+            for(var i = 0; i < experienceMeter.length; i++){
+                experienceMeter[i].style.background = 'linear-gradient(to right, black, #212121)';
+            }
+            experiencePageBtn[0].style.color = '#fff';
+            experiencePageBtn[0].style.border = '2px solid grey';
+            experiencePageBtnI[0].style.color = '#fff';
+            experiencePage2H1[0].style.color = '#fff';
+            experiencePage2Line[0].style.background = 'linear-gradient(to right, black, #212121, black)';
+            for(var i = 0; i < experiencePage2P.length; i++){
+                experiencePage2P[i].style.color = '#fff';
+            }
+            faCheck1.style.color = 'grey';
+            faCheck2.style.color = 'grey';
+            faCheck3.style.color = 'grey';
+            faCheck4.style.color = 'grey';
+            faCheck5.style.color = 'grey';
+            projectsPageH1[0].style.color = '#fff';
+            for(var i = 0; i < hiddenMenu.length; i++){
+                hiddenMenu[i].style.background = '#424242';
+            }
+        } else{
+            document.body.style.background = 'linear-gradient(to right top, violet, cyan, darkviolet)';
+            aboutPageCont[0].style.background = '#fff';
+            aboutPageH1[0].style.color = '#000';
+            aboutPageH3[0].style.color = '#000';
+            aboutPageH4[0].style.color = '#000';
+            for(var i = 0; i < aboutPageSpanRight.length; i++){
+                aboutPageSpanRight[i].style.color = '#000';
+            }
+            socialTitle[0].style.color = '#000';
+            experiencePageRow[0].style.background = '#fff'
+            projectsPageRow[0].style.background = '#fff';
+            experienceTitle[0].style.color = '#000';
+            for(var i = 0; i < line.length; i++){
+                line[i].style.background = 'linear-gradient(to right, cyan, violet)';
+            }
+            for(var i = 0; i < experienceP.length; i++){
+                experienceP[i].style.color = '#000';
+            }
+            for(var i = 0; i < experienceMeter.length; i++){
+                experienceMeter[i].style.background = 'linear-gradient(to left, darkcyan, violet)';
+            }
+            experiencePageBtn[0].style.color = '#000';
+            experiencePageBtn[0].style.border = '2px solid cyan';
+            experiencePageBtnI[0].style.color = '#000';
+            experiencePage2H1[0].style.color = '#000';
+            experiencePage2Line[0].style.background = 'linear-gradient(to right, cyan, violet)';
+            for(var i = 0; i < experiencePage2P.length; i++){
+                experiencePage2P[i].style.color = '#000';
+            }
+            faCheck1.style.color = 'darkcyan';
+            faCheck2.style.color = 'darkcyan';
+            faCheck3.style.color = 'darkcyan';
+            faCheck4.style.color = 'darkcyan';
+            faCheck5.style.color = 'darkcyan';
+            projectsPageH1[0].style.color = '#000';
+            for(var i = 0; i < hiddenMenu.length; i++){
+                hiddenMenu[i].style.background = 'linear-gradient(to left, darkcyan, violet)';
+            }
+        }
+    });
+};
+
 
 // navBarA.forEach(elem => elem.addEventListener('click', smoothScroll));
-
+/*
 function smoothScro(){
 function smoothScroll(event){
     event.preventDefault();
@@ -60,7 +172,7 @@ navMobileA[4].addEventListener('click', smoothScroll);
 navMobileA[5].addEventListener('click', smoothScroll);
 navMobileA[6].addEventListener('click', smoothScroll);
 }
-
+*/
 
 function loader(){
     document.body.addEventListener('load', ()=>{
@@ -487,9 +599,10 @@ function navScroll(){
        window.onload = () => {
 
         timer = setInterval('reviewsSlide()', 3000);
-        timerTwo = setInterval('blogSlider()', 2000);
+        timerTwo = setInterval('blogSlider()', 3000);
         setTimeout(()=>{setInterval('fadeImg()', 6000);}, 1000);
        // smoothScro();
+        darkMode();
         blogV();
         blogMobileV();
         mobileNavBtn();
@@ -550,7 +663,7 @@ imgsCont[0].addEventListener('mouseenter', ()=>{
 })
 
 imgsCont[0].addEventListener('mouseleave', ()=>{
-    return timerTwo = setInterval('blogSlider()', 2000);
+    return timerTwo = setInterval('blogSlider()', 3000);
 })
 
 
