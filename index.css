@@ -430,10 +430,11 @@ body{
      background: #fff;
    }
 
-   .div-h1-cont{
+   .contact-title-cont{
      position: relative;
      width: 250px;
      height: 50px;
+     margin-bottom: 70px;
    }
 
    .experience-title{
@@ -762,7 +763,7 @@ body{
     margin-bottom: 50px;
    }
 
-   .fifth-page-contact-cont{
+   .contact-page-big-cont{
      margin-top: 75px;
      margin-bottom: 75px;
      background: #fff;
@@ -773,7 +774,7 @@ body{
      -o-box-shadow: 0 0 10px  rgba(0,0,0,0.6);
    }
 
-   .fifth-page-h1, .services-page-h1{
+   .contact-page-h1, .services-page-h1{
     font-weight: bold;
     margin: 0;
     margin-bottom: 5px;
@@ -781,10 +782,6 @@ body{
     text-align: center;
     font-family: 'Saira', sans-serif;
     line-height: 1.3em;
-   }
-
-   .contact-title-cont{
-     margin-bottom: 70px;
    }
 
    .contact-cont{
@@ -850,6 +847,7 @@ body{
      font-size: medium;
      font-family: 'Saira', sans-serif;
      margin-bottom: 20px;
+     color: grey;
    }
 
    .contact-form-input:focus{
@@ -857,6 +855,7 @@ body{
      transition: 0.5s;
      font-size: small;
      border-bottom: 3px solid cyan;
+     color: silver;
    }
 
    .contact-form-btn{
@@ -944,7 +943,11 @@ body{
  }
 
  .mobile-blog-row{
-   background: white;
+ }
+
+ .mobile-blog-title-cont{
+   background: #fff;
+   margin: 0;
  }
 
  .mobile-blog-h1{
@@ -956,6 +959,7 @@ body{
   text-align: center;
   font-family: 'Saira', sans-serif;
   line-height: 1.3em;
+  margin-top: 15px;
  }
 
  .mobile-blog-line{

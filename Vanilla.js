@@ -28,6 +28,7 @@ var firstPageImg = document.getElementsByClassName('first-page-img');
 var navA = document.getElementsByClassName('nav-li-a');
 var blogView = document.getElementsByClassName('blog-full-view');
 var blogBtn = document.getElementsByClassName('blog-btn');
+var mobileBlogParagraph = document.getElementsByClassName('mobile-blog-paragraph');
 var mobileBlogBtn = document.getElementsByClassName('mobile-blog-btn');
 var blogCloseBtn = document.getElementById('blog-close-btn');
 var loader = document.getElementsByClassName('loader-screen');
@@ -68,12 +69,18 @@ var imgsCont = document.getElementsByClassName('imgs-cont');
 var blogParagraph = document.getElementsByClassName('blog-paragraph');
 var blogBtn = document.getElementsByClassName('blog-btn');
 var blogSmallContLi = document.getElementsByClassName('blog-small-cont-li');
-
+var mobileBlogTitleCont = document.getElementsByClassName('mobile-blog-title-cont');
+var mobileBlogH1 = document.getElementsByClassName('mobile-blog-h1');
+var mobileBlogCont = document.getElementsByClassName('mobile-blog-cont');
 var servicesPageBigCont = document.getElementsByClassName('services-page-big-cont');
 var servicesPageH1 = document.getElementsByClassName('services-page-h1');
 var servicesCont = document.getElementsByClassName('services-cont');
 var serviceTitle = document.getElementsByClassName('service-title');
 var servicePara = document.getElementsByClassName('service-para');
+var contactPageBigCont = document.getElementsByClassName('contact-page-big-cont');
+var contactPageH1 = document.getElementsByClassName('contact-page-h1');
+var contactMessage = document.getElementsByClassName('contact-message');
+var contactFormBtn = document.getElementsByClassName('contact-form-btn');
 
 function darkMode(){
     darkModeBtn[0].addEventListener('click', ()=>{
@@ -141,6 +148,15 @@ function darkMode(){
             for(var i = 0; i < blogSmallContLi.length; i++){
                 blogSmallContLi[i].style.color = '#fff';
             }
+            mobileBlogTitleCont[0].style.background = '#212121';
+            mobileBlogH1[0].style.color = '#fff';
+            for(var i = 0; i < mobileBlogCont.length; i++){
+                mobileBlogCont[i].style.background = '#212121';
+            }
+            for(var i = 0; i < mobileBlogParagraph.length; i++){
+                mobileBlogParagraph[i].style.color = '#fff';
+                mobileBlogBtn[i].style.color = '#fff';
+            }
             servicesPageBigCont[0].style.background = '#212121';
             servicesPageH1[0].style.color = '#fff';
             servicesCont[0].style.background = '#212121';
@@ -148,6 +164,10 @@ function darkMode(){
                 serviceTitle[i].style.color = '#fff';
                 servicePara[i].style.color = 'grey';
             }
+            contactPageBigCont[0].style.background = '#212121';
+            contactPageH1[0].style.color = '#fff';
+            contactMessage[0].style.color = '#fff';
+            contactFormBtn[0].style.color = '#fff';
         } else{
             document.body.style.background = 'linear-gradient(to right top, violet, cyan, darkviolet)';
             aboutPageCont[0].style.background = '#fff';
@@ -209,6 +229,15 @@ function darkMode(){
             for(var i = 0; i < blogSmallContLi.length; i++){
                 blogSmallContLi[i].style.color = '#000';
             }
+            mobileBlogTitleCont[0].style.background = '#fff';
+            mobileBlogH1[0].style.color = '#000';
+            for(var i = 0; i < mobileBlogCont.length; i++){
+                mobileBlogCont[i].style.background = '#fff';
+            }
+            for(var i = 0; i < mobileBlogParagraph.length; i++){
+                mobileBlogParagraph[i].style.color = '#000';
+                mobileBlogBtn[i].style.color = '#000';
+            }
             servicesPageBigCont[0].style.background = '#fff';
             servicesPageH1[0].style.color = '#000';
             servicesCont[0].style.background = '#fff';
@@ -216,6 +245,10 @@ function darkMode(){
                 serviceTitle[i].style.color = '#000';
                 servicePara[i].style.color = 'grey';
             }
+            contactPageBigCont[0].style.background = '#fff';
+            contactPageH1[0].style.color = '#000';
+            contactMessage[0].style.color = '#000';
+            contactFormBtn[0].style.color = '#000';
         }
     });
 };
