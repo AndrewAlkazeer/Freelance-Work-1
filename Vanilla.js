@@ -51,11 +51,11 @@ var experiencePageBtnI = document.getElementsByClassName('experience-page-btn-i'
 var experiencePage2H1 = document.getElementsByClassName('experience-page-2-h1');
 var experiencePage2Line = document.getElementsByClassName('experience-page-2-line');
 var experiencePage2P = document.getElementsByClassName('experience-page-2-p');
-var faCheck1 = document.getElementById('fa-check1');
-var faCheck2 = document.getElementById('fa-check2');
-var faCheck3 = document.getElementById('fa-check3');
-var faCheck4 = document.getElementById('fa-check4');
-var faCheck5 = document.getElementById('fa-check5');
+//var faCheck1 = document.getElementById('fa-check1');
+//var faCheck2 = document.getElementById('fa-check2');
+//var faCheck3 = document.getElementById('fa-check3');
+//var faCheck4 = document.getElementById('fa-check4');
+//var faCheck5 = document.getElementById('fa-check5');
 var projectsPageH1 = document.getElementsByClassName('projects-page-h1');
 var reviewsPageCont = document.getElementsByClassName('reviews-page-cont');
 var reviewerComment = document.getElementsByClassName('reviewer-comment');
@@ -81,6 +81,7 @@ var contactPageBigCont = document.getElementsByClassName('contact-page-big-cont'
 var contactPageH1 = document.getElementsByClassName('contact-page-h1');
 var contactMessage = document.getElementsByClassName('contact-message');
 var contactFormBtn = document.getElementsByClassName('contact-form-btn');
+var footer = document.getElementsByClassName('footer');
 
 function darkMode(){
     darkModeBtn[0].addEventListener('click', ()=>{
@@ -114,18 +115,18 @@ function darkMode(){
             }
             */
             experiencePageBtn[0].style.color = '#fff';
-            experiencePageBtn[0].style.border = '2px solid grey';
+           // experiencePageBtn[0].style.border = '2px solid grey';
             experiencePageBtnI[0].style.color = '#fff';
             experiencePage2H1[0].style.color = '#fff';
         //    experiencePage2Line[0].style.background = 'linear-gradient(to right, black, #212121, black)';
             for(var i = 0; i < experiencePage2P.length; i++){
                 experiencePage2P[i].style.color = '#fff';
             }
-            faCheck1.style.color = 'grey';
-            faCheck2.style.color = 'grey';
-            faCheck3.style.color = 'grey';
-            faCheck4.style.color = 'grey';
-            faCheck5.style.color = 'grey';
+           // faCheck1.style.color = 'grey';
+           // faCheck2.style.color = 'grey';
+           // faCheck3.style.color = 'grey';
+           // faCheck4.style.color = 'grey';
+           // faCheck5.style.color = 'grey';
             projectsPageH1[0].style.color = '#fff';
             for(var i = 0; i < hiddenMenu.length; i++){
                 hiddenMenu[i].style.background = '#424242';
@@ -168,6 +169,7 @@ function darkMode(){
             contactPageH1[0].style.color = '#fff';
             contactMessage[0].style.color = '#fff';
             contactFormBtn[0].style.color = '#fff';
+            footer[0].style.background = '#212121';
         } else{
             document.body.style.background = 'linear-gradient(to right top, violet, cyan, darkviolet)';
             aboutPageCont[0].style.background = '#fff';
@@ -195,18 +197,18 @@ function darkMode(){
             }
             */
             experiencePageBtn[0].style.color = '#000';
-            experiencePageBtn[0].style.border = '2px solid cyan';
+          //  experiencePageBtn[0].style.border = '2px solid cyan';
             experiencePageBtnI[0].style.color = '#000';
             experiencePage2H1[0].style.color = '#000';
           //  experiencePage2Line[0].style.background = 'linear-gradient(to right, cyan, violet)';
             for(var i = 0; i < experiencePage2P.length; i++){
                 experiencePage2P[i].style.color = '#000';
             }
-            faCheck1.style.color = 'darkcyan';
-            faCheck2.style.color = 'darkcyan';
-            faCheck3.style.color = 'darkcyan';
-            faCheck4.style.color = 'darkcyan';
-            faCheck5.style.color = 'darkcyan';
+           // faCheck1.style.color = 'darkcyan';
+           // faCheck2.style.color = 'darkcyan';
+           // faCheck3.style.color = 'darkcyan';
+           // faCheck4.style.color = 'darkcyan';
+           // faCheck5.style.color = 'darkcyan';
             projectsPageH1[0].style.color = '#000';
             for(var i = 0; i < hiddenMenu.length; i++){
                 hiddenMenu[i].style.background = 'linear-gradient(to left, darkcyan, violet)';
@@ -249,6 +251,7 @@ function darkMode(){
             contactPageH1[0].style.color = '#000';
             contactMessage[0].style.color = '#000';
             contactFormBtn[0].style.color = '#000';
+            footer[0].style.background = '#fff';
         }
     });
 };
@@ -520,7 +523,7 @@ function navScroll(){
       navScroll();
 
         if (window.scrollY > 235) {
-            navBar.style.background = 'white';
+            navBar.style.background = '#fff';
             navBar.style.height = '70px';
             navBar.classList.add('nav-bar-shadow-anime');
             navBar.style.transition = '1s';

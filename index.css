@@ -524,6 +524,21 @@ body{
      font-family: 'Saira', sans-serif;
      font-size: medium;
      margin-bottom: 20px;
+     transition: 0.5s;
+    -moz-transition: 0.5s;
+    -o-transition: 0.5s;
+    -webkit-transition: 0.5s;
+   }
+
+   .experience-page-btn:hover{
+    box-shadow:  0 0 40px  cyan;
+    -moz-box-shadow: 0 0 40px  cyan;
+    -webkit-box-shadow: 0 0 40px  cyan;
+    -o-box-shadow: 0 0 40px  cyan;
+    transition: 0.5s;
+    -moz-transition: 0.5s;
+    -o-transition: 0.5s;
+    -webkit-transition: 0.5s;
    }
 
    .experience-page-btn-i{
@@ -927,6 +942,8 @@ body{
    height: 90%;
    background: white;
    -webkit-transition: 2s;
+   transition: 2s;
+   -o-transition: 2s;
    top: 28%;
    transform: translateY(-30%);
  }
@@ -1554,7 +1571,7 @@ body{
 
  #ul-smedia li a{
   padding-bottom: 0px;
-  border: 2px solid cyan;
+
   
  }
 
