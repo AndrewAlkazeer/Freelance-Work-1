@@ -8,7 +8,7 @@ body{
     margin-right: 10px;
     height: 100vh;
     background: linear-gradient(to top right, violet, cyan, darkviolet);
-    
+    width: 100%;
    }
 
    .first-page{
