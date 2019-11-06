@@ -723,7 +723,7 @@ function contactAnime(){
 
 
        window.onload = () => {
-
+      //  document.body.style.overflowX = 'hidden';
         timer = setInterval('reviewsSlide()', 3000);
         timerTwo = setInterval('blogSlider()', 3000);
         setTimeout(()=>{setInterval('fadeImg()', 6000);}, 1000);
