@@ -517,10 +517,25 @@ function navScroll(){
     })
 }
 
+function aboutFade(){
+    if(window.scrollY > 400){
+        aboutPageCont[0].classList.add('about-fade');
+    }
+}
+
+function contactAnime(){
+    if(window.scrollY >= 3800){
+        // WORKING HERE //
+
+        contactPageBigCont[0].classList.add('contact-anime');
+    }
+}
 
     window.addEventListener('scroll', ()=>{
 
       navScroll();
+      aboutFade();
+      contactAnime();
 
         if (window.scrollY > 235) {
             navBar.style.background = '#fff';
@@ -552,7 +567,6 @@ function navScroll(){
                 experienceMeter[i].style.transitionDelay = "1s";
             }
         }
-
 
         if(window.scrollY > 1400){
             /*
