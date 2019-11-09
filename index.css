@@ -1778,8 +1778,9 @@ body{
   -moz-transition: 1s;
   z-index: 7;
 }
+/* WORKING HERE */
 
-.dark-mode-cont:hover{
+.dark-mode-anime{
   right: 0;
   transition: 1s;
   -webkit-transition: 1s;

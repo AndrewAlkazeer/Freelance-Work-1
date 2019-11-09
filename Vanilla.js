@@ -33,6 +33,8 @@ var mobileBlogBtn = document.getElementsByClassName('mobile-blog-btn');
 var blogCloseBtn = document.getElementById('blog-close-btn');
 var loader = document.getElementsByClassName('loader-screen');
 var blogViewImg = document.getElementsByClassName('blog-full-view-img');
+var darkModeCont = document.getElementsByClassName('dark-mode-cont');
+var cogI = document.querySelector('.dark-mode-cont i');
 var darkModeBtn = document.getElementsByClassName('dark-mode-btn');
 var darkModeBtnCircle = document.getElementsByClassName('btn-circle');
 var aboutPageCont = document.getElementsByClassName('cont');
@@ -83,6 +85,13 @@ var contactMessage = document.getElementsByClassName('contact-message');
 var contactFormBtn = document.getElementsByClassName('contact-form-btn');
 var footer = document.getElementsByClassName('footer');
 var wrapper = document.getElementsByClassName('wrapper');
+
+function darkModeContAnime(){
+    cogI.addEventListener('click', ()=>{
+        darkModeCont[0].classList.toggle('dark-mode-anime');
+    });
+    
+};
 
 function darkMode(){
     darkModeBtn[0].addEventListener('click', ()=>{
@@ -733,6 +742,7 @@ console.log(window.scrollY);
         timerTwo = setInterval('blogSlider()', 3000);
         setTimeout(()=>{setInterval('fadeImg()', 6000);}, 1000);
        // smoothScro();
+        darkModeContAnime();
         darkMode();
         blogV();
         blogMobileV();
