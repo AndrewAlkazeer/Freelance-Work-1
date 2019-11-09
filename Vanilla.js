@@ -82,6 +82,7 @@ var contactPageH1 = document.getElementsByClassName('contact-page-h1');
 var contactMessage = document.getElementsByClassName('contact-message');
 var contactFormBtn = document.getElementsByClassName('contact-form-btn');
 var footer = document.getElementsByClassName('footer');
+var wrapper = document.getElementsByClassName('wrapper');
 
 function darkMode(){
     darkModeBtn[0].addEventListener('click', ()=>{
@@ -305,7 +306,7 @@ function blogMobileV(){
             blogView[0].style.left = '0%';
             blogView[0].style.transition = '1s';
             blogView[0].style.clipPath = 'polygon(0 48%, 100% 52%, 100% 100%, 0 52%)';
-            
+            blogCloseBtn[0].style.display = 'none';
             setTimeout(()=>{
             blogView[0].style.clipPath = 'polygon(0 48%, 100% 52%, 100% 100%, 0 100%)';
             }, 700);
@@ -338,7 +339,7 @@ for(var q = 0; q < blogBtn.length; q++){
         blogView[0].style.left = '0%';
         blogView[0].style.transition = '1s';
         blogView[0].style.clipPath = 'polygon(0 48%, 100% 52%, 100% 100%, 0 52%)';
-        
+
         setTimeout(()=>{
         blogView[0].style.clipPath = 'polygon(0 48%, 100% 52%, 100% 100%, 0 100%)';
         }, 700);
@@ -358,6 +359,7 @@ for(var q = 0; q < blogBtn.length; q++){
 blogCloseBtn.addEventListener('click', ()=>{
     setTimeout(()=>{
         blogView[0].style.left = '-100%';
+
     }, 700);
 
 blogView[0].style.transition = '1s';
@@ -477,7 +479,7 @@ function mobileNavBtn(){
 }
 
 function navScroll(){
-    window.addEventListener('scroll', ()=>{
+    document.addEventListener('scroll', ()=>{
         if(window.scrollY === 0 || window.scrollY < 690){
             navBarA[0].style.border = "2px solid cyan";
         } else{
@@ -525,11 +527,14 @@ function aboutFade(){
 
 function contactAnime(){
     if(window.scrollY >= 3800){
-        // WORKING HERE //
-
         contactPageBigCont[0].classList.add('contact-anime');
     }
 }
+
+wrapper[0].addEventListener('scroll', ()=>{
+    console.log('scrolled');
+console.log(window.scrollY);
+})
 
     window.addEventListener('scroll', ()=>{
 
@@ -723,7 +728,7 @@ function contactAnime(){
 
 
        window.onload = () => {
-      //  document.body.style.overflowX = 'hidden';
+      //  document.documentElement.style.overflowX = 'hidden';
         timer = setInterval('reviewsSlide()', 3000);
         timerTwo = setInterval('blogSlider()', 3000);
         setTimeout(()=>{setInterval('fadeImg()', 6000);}, 1000);

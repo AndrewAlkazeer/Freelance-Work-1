@@ -1,16 +1,23 @@
 html{
   scroll-behavior: smooth;
-  overflow-x: hidden !important; 
-  
+  overflow-x: hidden;
+
  }
 
 body{
     margin-left: 10px;
     margin-right: 10px;
-    height: 100vh;
+    height: auto;
     background: linear-gradient(to top right, violet, cyan, darkviolet);
     width: 100%;
-    
+    overflow-x: hidden;
+
+   }
+
+   .wrapper{
+
+     width: 100%;
+     height: auto;
    }
 
    .first-page{
@@ -1220,12 +1227,12 @@ body{
  }
 
  #blog-close-btn{
-  position: fixed;
+  position: absolute;
    color: cyan;
-   z-index: 400;
+   z-index: 200;
    font-size: x-large;
-   right: 5%;
-   top: 5%;
+   right: 3%;
+   top: 3%;
    cursor: pointer;
  }
 
