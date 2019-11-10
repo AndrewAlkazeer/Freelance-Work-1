@@ -53,11 +53,6 @@ var experiencePageBtnI = document.getElementsByClassName('experience-page-btn-i'
 var experiencePage2H1 = document.getElementsByClassName('experience-page-2-h1');
 var experiencePage2Line = document.getElementsByClassName('experience-page-2-line');
 var experiencePage2P = document.getElementsByClassName('experience-page-2-p');
-//var faCheck1 = document.getElementById('fa-check1');
-//var faCheck2 = document.getElementById('fa-check2');
-//var faCheck3 = document.getElementById('fa-check3');
-//var faCheck4 = document.getElementById('fa-check4');
-//var faCheck5 = document.getElementById('fa-check5');
 var projectsPageH1 = document.getElementsByClassName('projects-page-h1');
 var reviewsPageCont = document.getElementsByClassName('reviews-page-cont');
 var reviewerComment = document.getElementsByClassName('reviewer-comment');
@@ -84,7 +79,6 @@ var contactPageH1 = document.getElementsByClassName('contact-page-h1');
 var contactMessage = document.getElementsByClassName('contact-message');
 var contactFormBtn = document.getElementsByClassName('contact-form-btn');
 var footer = document.getElementsByClassName('footer');
-var wrapper = document.getElementsByClassName('wrapper');
 
 function darkModeContAnime(){
     cogI.addEventListener('click', ()=>{
@@ -193,32 +187,20 @@ function darkMode(){
             experiencePageRow[0].style.background = '#fff'
             projectsPageRow[0].style.background = '#fff';
             experienceTitle[0].style.color = '#000';
-            /*
-            for(var i = 0; i < line.length; i++){
-                line[i].style.background = 'linear-gradient(to right, cyan, violet)';
-            }
-            */
+
             for(var i = 0; i < experienceP.length; i++){
                 experienceP[i].style.color = '#000';
             }
-            /*
-            for(var i = 0; i < experienceMeter.length; i++){
-                experienceMeter[i].style.background = 'linear-gradient(to left, darkcyan, violet)';
-            }
-            */
+
             experiencePageBtn[0].style.color = '#000';
-          //  experiencePageBtn[0].style.border = '2px solid cyan';
+
             experiencePageBtnI[0].style.color = '#000';
             experiencePage2H1[0].style.color = '#000';
-          //  experiencePage2Line[0].style.background = 'linear-gradient(to right, cyan, violet)';
+
             for(var i = 0; i < experiencePage2P.length; i++){
                 experiencePage2P[i].style.color = '#000';
             }
-           // faCheck1.style.color = 'darkcyan';
-           // faCheck2.style.color = 'darkcyan';
-           // faCheck3.style.color = 'darkcyan';
-           // faCheck4.style.color = 'darkcyan';
-           // faCheck5.style.color = 'darkcyan';
+           
             projectsPageH1[0].style.color = '#000';
             for(var i = 0; i < hiddenMenu.length; i++){
                 hiddenMenu[i].style.background = 'linear-gradient(to left, darkcyan, violet)';
@@ -266,44 +248,12 @@ function darkMode(){
     });
 };
 
-
-// navBarA.forEach(elem => elem.addEventListener('click', smoothScroll));
-/*
-function smoothScro(){
-function smoothScroll(event){
-    event.preventDefault();
-    const targetId = event.currentTarget.getAttribute("href");
-    window.scrollTo({
-        top: targetId==='#' ? 0 : document.querySelector(targetId).offsetTop,
-        behavior: 'smooth'
-    });
-}
-
-navA[0].addEventListener('click', smoothScroll);
-navA[1].addEventListener('click', smoothScroll);
-navA[2].addEventListener('click', smoothScroll);
-navA[3].addEventListener('click', smoothScroll);
-navA[4].addEventListener('click', smoothScroll);
-navA[5].addEventListener('click', smoothScroll);
-navA[6].addEventListener('click', smoothScroll);
-navMobileA[0].addEventListener('click', smoothScroll);
-navMobileA[1].addEventListener('click', smoothScroll);
-navMobileA[2].addEventListener('click', smoothScroll);
-navMobileA[3].addEventListener('click', smoothScroll);
-navMobileA[4].addEventListener('click', smoothScroll);
-navMobileA[5].addEventListener('click', smoothScroll);
-navMobileA[6].addEventListener('click', smoothScroll);
-}
-*/
-
 function loader(){
     document.body.addEventListener('load', ()=>{
         loader[0].style.opacity = '0';
         loader[0].style.transitionDelay = '1s';
         loader[0].style.display = 'none';
     });
-
-
     
 };
 
@@ -358,10 +308,6 @@ for(var q = 0; q < blogBtn.length; q++){
         setTimeout(()=>{
             blogView[0].style.clipPath = 'polygon(0 0%, 100% 0%, 100% 100%, 0 100%)';
         }, 1100);
-        
-     //   var blogImg = imgCont[3].getAttribute('src');
-     //   blogViewImg[0].setAttribute('src', blogImg);
-        /* Change blog view img */
     });
 };
 
@@ -374,9 +320,7 @@ blogCloseBtn.addEventListener('click', ()=>{
 blogView[0].style.transition = '1s';
 blogView[0].style.clipPath = 'polygon(0 48%, 100% 48%, 100% 52%, 0 52%)';
 });
-
 }
-
 
 barsBtn.addEventListener('click', ()=>{
 
@@ -540,11 +484,6 @@ function contactAnime(){
     }
 }
 
-wrapper[0].addEventListener('scroll', ()=>{
-    console.log('scrolled');
-console.log(window.scrollY);
-})
-
     window.addEventListener('scroll', ()=>{
 
       navScroll();
@@ -583,15 +522,6 @@ console.log(window.scrollY);
         }
 
         if(window.scrollY > 1400){
-            /*
-            projectOne.style.left = "0";
-            projectOne.style.transition = '2s';
-            projectOne.classList.add('project-img-anime');
-
-            projectThree.style.left = "0";
-            projectThree.style.transition = '2s';
-            projectThree.classList.add('project-img-anime');
-            */
 
             projectOne.style.top = "0";
             projectOne.style.opacity = "1";
@@ -623,13 +553,6 @@ console.log(window.scrollY);
             projectSix.style.transition = "0.2s";
             projectSix.style.transitionDelay = "3.5s";
         }
-        else {
-            /*
-            projectOne.style.left = "-160%";
-            projectOne.style.transition = '2s';
-            */
-        }
-
     },false);
 
 
@@ -737,11 +660,9 @@ console.log(window.scrollY);
 
 
        window.onload = () => {
-      //  document.documentElement.style.overflowX = 'hidden';
         timer = setInterval('reviewsSlide()', 3000);
         timerTwo = setInterval('blogSlider()', 3000);
         setTimeout(()=>{setInterval('fadeImg()', 6000);}, 1000);
-       // smoothScro();
         darkModeContAnime();
         darkMode();
         blogV();
@@ -855,18 +776,6 @@ function fadeImg(){
         z = 1;
     }
 }
-
-/*
-firstPage.addEventListener('mouseenter', ()=>{
-
-    firstPageImg[0].style.left = '0';
-    firstPageImg[0].style.top = '0';
-    firstPageImg[0].style.width = '100%';
-    firstPageImg[0].style.height = '100%';
-    firstPageImg[0].style.transition = '3s';
-    firstPageImg[0].style.opacity = '0.5';
-});
-*/
 
 function changeColor(elem){
 

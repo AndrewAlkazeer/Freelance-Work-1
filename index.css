@@ -14,12 +14,6 @@ body{
 
    }
 
-   .wrapper{
-
-     width: 100%;
-     height: auto;
-   }
-
    .first-page{
      position: relative;
      width: 100%;
@@ -279,56 +273,6 @@ body{
      -webkit-transition: 3s;
    }
 
-   /*
-   .profile-img{
-     width: 100%;
-     height: auto;
-     margin-top: 20px;
-   }
-   
-   .profile-img img{
-     width: 100%;
-     height: auto;
-   }
-   
-   .welcome-page-btn{
-     position: relative;
-     width: 90%;
-     height: 50px;
-     font-size: small;
-     font-weight: bold;
-     left: 50%;
-     transform: translateX(-50%);
-     margin-top: 30px;
-     margin-bottom: 10px;
-     font-family: 'Oswald', sans-serif;
-     background: transparent;
-     border: none;
-     border: 2px solid violet;
-   }
-   
-   .welcome-page-btn:hover{
-         box-shadow:  0 0 20px  violet;
-         -moz-box-shadow: 0 0 20px  violet;
-         -webkit-box-shadow: 0 0 20px  violet;
-         -o-box-shadow: 0 0 20px  violet;
-         transition: 500ms;
-    
-}
-
-   .welcome-page-btn-i{
-     margin-right: 10px;
-     color: violet;
-     
-   }
-   
-   #welcome-page-btn-i{
-    font-size: large;
-   }
-
-   .about-page-big-cont{     /* Working Here  */
-   
-   */
    .profile-info-h1{
      font-family: 'Oswald', sans-serif;
      display: inline-block;
@@ -497,7 +441,6 @@ body{
      left: 50%;
      transform: translateX(-50%);
      border-radius: 10px;
-     /* background: linear-gradient(to right, black, #212121, black); */
    }
 
    .experience-cont{
@@ -542,8 +485,6 @@ body{
      background: linear-gradient(to left, darkcyan, violet);
      margin-bottom: 10px;
      border-radius: 25px;
-     /* background: linear-gradient(to left, #212121, #424242); */
-     /* background: linear-gradient(to right, black, #212121); */
    }
 
    .meter-percent{
@@ -657,7 +598,6 @@ body{
      -o-transition-timing-function: cubic-bezier(0,1.55,.4,.2) !important;
      -moz-transition-timing-function: cubic-bezier(0,1.55,.4,.2) !important;
    }
-/* Doesnt Work */
 
    .projects-cont{
      margin-bottom: 5px;
@@ -1187,7 +1127,7 @@ body{
    position: relative !important;
    top: 5% !important;
    margin-left: 10px;
-   padding: 0 !important; /* Still needs some changes due to a problem happened for no reason making me change from absolute position to relative */
+   padding: 0 !important;
  }
 
  .blog-small-cont-li{
@@ -1223,7 +1163,6 @@ body{
    overflow-y: auto;
    clip-path: polygon(0 48%, 100% 48%, 100% 52%, 0 52%);
    left: -100%;
-     /* Working here */
  }
 
  #blog-close-btn{
@@ -1301,24 +1240,7 @@ body{
   left: 15%;
   transform: translateX(-15%);
 }
-/*
-.blog-full-view-left-wall{
-  position: absolute;
-  width: 5px;
-  height: 100%;
-  background: linear-gradient(to top right, violet, cyan);
-  left: 0;
-  top: 0;
-}
-.blog-full-view-right-wall{
-  position: absolute;
-  width: 5px;
-  height: 100%;
-  background: linear-gradient(to top right, violet, cyan);
-  right: 0;
-  top: 0;
-}
-*/
+
 .main .paragraph{
   position: relative;
   color: silver;
@@ -1360,7 +1282,7 @@ body{
 .comments-cont{
   position: relative;
   width: 80%;
-  height: auto; /* Will change later */
+  height: auto;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -1475,7 +1397,7 @@ body{
 .replier-cont{
   position: relative;
   width: 80%;
-  height: auto; /* Will change later 2 */
+  height: auto;
   left: 50%;
   transform: translateX(-50%);
   margin-top: 20px;
@@ -1504,7 +1426,7 @@ body{
 .comments-form-cont{
   position: relative;
   width: 80%;
-  height: auto; /* Will change to auto later 50vh */
+  height: auto;
   left: 50%;
   transform: translateX(-50%);
   border-top: 2px solid #666;
@@ -1546,7 +1468,7 @@ body{
 
 .comments-form-cont input:focus{
   outline: none;
-  color: white; /* Doesn't Work! */
+  color: white;
 }
 
 .comments-form-cont button{
@@ -1778,7 +1700,6 @@ body{
   -moz-transition: 1s;
   z-index: 7;
 }
-/* WORKING HERE */
 
 .dark-mode-anime{
   right: 0;
@@ -1857,5 +1778,3 @@ body{
   }
 
  }
-
- /* clip-path: polygon(10% 0, 90% 0, 100% 10%, 100% 90%, 90% 100%, 10% 100%, 0 90%, 0 10%); */
