@@ -265,7 +265,7 @@ function blogMobileV(){
             blogView[0].style.left = '0%';
             blogView[0].style.transition = '1s';
             blogView[0].style.clipPath = 'polygon(0 48%, 100% 52%, 100% 100%, 0 52%)';
-            blogCloseBtn[0].style.display = 'none';
+           // blogCloseBtn[0].style.display = 'none';
             setTimeout(()=>{
             blogView[0].style.clipPath = 'polygon(0 48%, 100% 52%, 100% 100%, 0 100%)';
             }, 700);
